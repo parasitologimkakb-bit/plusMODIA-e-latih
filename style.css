@@ -965,3 +965,355 @@ footer span {
     }
 
 }
+
+/* ================= AMANAT PENGARAH ================= */
+
+.director-message {
+
+    padding: 100px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #06142d 0%,
+            #0b2145 55%,
+            #102e62 100%
+        );
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.director-message::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(69,215,255,.12);
+
+    right: -180px;
+
+    top: -180px;
+
+}
+
+
+.director-message::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(69,215,255,.08);
+
+    left: -160px;
+
+    bottom: -160px;
+
+}
+
+
+.director-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 360px 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ================= GAMBAR ================= */
+
+.director-photo {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.photo-frame {
+
+    width: 330px;
+
+    height: 430px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #17376f,
+            #07152e
+        );
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.35);
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+.photo-frame::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 270px;
+
+    height: 270px;
+
+    border-radius: 50%;
+
+    background: rgba(69,215,255,.08);
+
+    top: 40px;
+
+}
+
+
+.photo-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ================= TEKS ================= */
+
+.director-label {
+
+    color: #45d7ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.director-content h2 {
+
+    font-size: 46px;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+
+}
+
+
+.message-line {
+
+    width: 70px;
+
+    height: 3px;
+
+    background: #45d7ff;
+
+    margin-bottom: 25px;
+
+}
+
+
+.director-content > p:not(.director-label):not(.closing) {
+
+    color: #d0dbea;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.director-content strong {
+
+    color: white;
+
+}
+
+
+.closing {
+
+    color: #45d7ff;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+
+}
+
+
+/* ================= NAMA PENGARAH ================= */
+
+.director-name {
+
+    margin-top: 28px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.director-name strong {
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.director-name span {
+
+    color: #aebdd4;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 900px) {
+
+    .director-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+
+    .director-photo {
+
+        order: 1;
+
+    }
+
+
+    .director-content {
+
+        order: 2;
+
+    }
+
+
+    .photo-frame {
+
+        width: 280px;
+
+        height: 370px;
+
+    }
+
+
+    .director-content h2 {
+
+        font-size: 36px;
+
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .director-message {
+
+        padding: 70px 6%;
+
+    }
+
+
+    .photo-frame {
+
+        width: 250px;
+
+        height: 330px;
+
+    }
+
+
+    .director-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .director-content > p:not(.director-label):not(.closing) {
+
+        font-size: 13px;
+
+    }
+
+}
