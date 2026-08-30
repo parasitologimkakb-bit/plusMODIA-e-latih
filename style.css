@@ -1101,9 +1101,9 @@ footer span {
 
     position: absolute;
 
-    width: 270px;
+    width: 27px;
 
-    height: 270px;
+    height: 27px;
 
     border-radius: 50%;
 
@@ -1116,9 +1116,9 @@ footer span {
 
 .photo-frame img {
 
-    width: 100%;
+    width: 10%;
 
-    height: 100%;
+    height: 10%;
 
     object-fit: contain;
 
