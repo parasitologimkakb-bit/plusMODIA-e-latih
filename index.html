@@ -5,53 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>plusMODIA e-latih | Unit Parasitologi MKAKB</title>
+    <title>plusMODIA e-Latih | Unit Parasitologi MKAKB</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- ================= HEADER ================= -->
 
     <header class="navbar">
 
-        <div class="logo-area">
+        <div class="brand">
 
-            <img src="logo.png" alt="plusMODIA Logo">
+            <img src="logo.png" alt="Logo plusMODIA">
 
-            <div class="website-name">
+            <div class="brand-text">
                 <strong>plusMODIA</strong>
-                <span>e-latih</span>
+                <span>e-Latih</span>
             </div>
 
         </div>
 
 
-        <nav>
+        <nav id="mainNav">
 
-            <a href="#utama" class="active">Utama</a>
-
-            <a href="#pengenalan">
-                Pengenalan Unit
-            </a>
-
-            <a href="#modul">
-                Modul
-            </a>
-
-            <a href="#latihan">
-                Latihan dan Ujian
-            </a>
-
-            <a href="#hubungi">
-                Hubungi Kami
-            </a>
+            <a href="#utama">Utama</a>
+            <a href="#pengenalan">Pengenalan Unit</a>
+            <a href="#modul">Modul</a>
+            <a href="#latihan">Latihan dan Ujian</a>
+            <a href="#hubungi">Hubungi Kami</a>
 
         </nav>
 
 
-        <button class="menu-button" onclick="toggleMenu()">
+        <button class="menu-btn" onclick="toggleMenu()">
             ☰
         </button>
 
@@ -59,363 +47,271 @@
 
 
 
-    <!-- ================= HOME ================= -->
+    <!-- ================= UTAMA ================= -->
 
-    <section id="utama" class="hero">
+    <main id="utama">
 
-        <div class="hero-content">
+        <!-- HERO -->
 
-            <p class="small-title">
-                PLUSMODIA E-LATIH
-            </p>
+        <section class="hero">
 
+            <div class="hero-content">
 
-            <h1>
-                UNIT PARASITOLOGI
-                <br>
-                <span>MKAKB</span>
-            </h1>
+                <p class="eyebrow">
+                    plusMODIA e-LATIH MKAKB
+                </p>
 
+                <h1>
+                    UNIT PARASITOLOGI
+                    <span>MKAKB</span>
+                </h1>
 
-            <p class="description">
-
-                <b>
-                    Kuasai kemahiran mengenalpasti malaria,
-                    bila-bila masa, di mana sahaja!
-                </b>
-
-                <br>
-
-                Dapatkan sijil kompetensi di hujung jari anda.
-
-            </p>
-
-
-            <div class="buttons">
-
-                <a href="#modul" class="button primary">
-                    Mula Pembelajaran →
-                </a>
-
-
-                <a href="#pengenalan" class="button secondary">
-                    Kenali Unit Kami
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-decoration">
-
-            <div class="circle circle1"></div>
-
-            <div class="circle circle2"></div>
-
-            <div class="lab-card">
-
-                🔬
-
-                <div>
-
-                    <small>
-                        e-LATIH
-                    </small>
+                <p class="hero-text">
 
                     <strong>
-                        Malaria Microscopy
+                        Kuasai kemahiran mengenalpasti malaria,
+                        bila-bila masa, di mana sahaja!
                     </strong>
+
+                    <br>
+
+                    Dapatkan sijil kompetensi di hujung jari anda.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#modul" class="btn btn-primary">
+                        Mula Pembelajaran
+                    </a>
+
+                    <a href="#amanat" class="btn btn-outline">
+                        Amanat Pengarah
+                    </a>
 
                 </div>
 
             </div>
 
-        </div>
+
+            <div class="hero-decoration">
+
+                <div class="decoration-circle"></div>
+
+                <div class="microscope-card">
+                    🔬
+                    <div>
+                        <small>e-LATIH</small>
+                        <strong>Malaria Microscopy</strong>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
-    <!-- ================= PENGENALAN ================= -->
 
-    <section id="pengenalan" class="section">
 
-        <div class="section-title">
+        <!-- ================= AMANAT PENGARAH ================= -->
 
-            <p>
-                01 • TENTANG KAMI
+        <section id="amanat" class="amanat-section">
+
+            <div class="amanat-container">
+
+
+                <!-- GAMBAR PENGARAH DI SEBELAH KIRI -->
+
+                <div class="director-photo">
+
+                    <img
+                        src="pengarah.png"
+                        alt="Pengarah Makmal Kesihatan Awam Kota Bharu"
+                    >
+
+                </div>
+
+
+                <!-- TEKS AMANAT DI SEBELAH KANAN -->
+
+                <div class="amanat-content">
+
+                    <p class="section-label">
+                        AMANAT PENGARAH
+                    </p>
+
+                    <h2>
+                        Amanat Pengarah
+                    </h2>
+
+                    <div class="title-line"></div>
+
+
+                    <p>
+                        Assalamualaikum wbt dan Salam Sejahtera,
+                    </p>
+
+                    <p>
+                        Tahniah kepada semua staf di Unit Parasitologi
+                        Makmal Kesihatan Awam Kota Bharu (MKAKB) kerana
+                        telah berjaya membangunkan modul latihan
+                        mikroskopik malaria menggunakan platform atas talian.
+                    </p>
+
+                    <p>
+                        <strong>plusMODIA e-Latih MKAKB</strong>
+                        merupakan sebuah modul latihan atas talian yang
+                        dibangunkan khusus untuk melatih staf kesihatan
+                        terutamanya Juruteknologi Makmal Perubatan (JTMP)
+                        dalam mengenal pasti parasit malaria melalui
+                        bacaan slaid BFMP.
+                    </p>
+
+                    <p>
+                        Projek ini bertujuan meningkatkan kecekapan dan
+                        kemahiran staf/JTMP dalam pendiagnosan malaria
+                        tanpa perlu hadiri latihan secara bersemuka di MKAKB.
+                    </p>
+
+                    <p>
+                        Melalui <strong>plusMODIA e-Latih MKAKB</strong>,
+                        peserta boleh mengikuti latihan secara maya
+                        (virtual) dengan bahan interaktif yang
+                        mensimulasikan keadaan sebenar di makmal.
+                    </p>
+
+                    <p>
+                        Modul ini turut menyediakan pelbagai tahap latihan
+                        serta ujian penilaian untuk mengukur tahap
+                        kompetensi peserta.
+                    </p>
+
+                    <p>
+                        Peserta yang berjaya melepasi ujian secara atas
+                        talian adalah layak untuk menerima sijil kompetensi,
+                        sekali gus mengiktiraf kemahiran mereka dalam
+                        pengesanan parasit malaria.
+                    </p>
+
+                    <p>
+                        Projek ini bukan sahaja menjimatkan masa dan kos
+                        latihan, malah memperluas akses kepada latihan
+                        berkualiti bukan sahaja di negeri Kelantan malah
+                        boleh digunapakai di negeri-negeri lain di Malaysia.
+                    </p>
+
+
+                    <p class="selamat">
+                        Selamat Belajar!
+                    </p>
+
+
+                    <div class="director-details">
+
+                        <strong>
+                            Dr Noor Hafizan binti Mat Salleh
+                        </strong>
+
+                        <span>
+                            Pakar Perubatan Kesihatan Awam
+                        </span>
+
+                        <span>
+                            Pengarah Makmal Kesihatan Awam Kota Bharu
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PENGENALAN ================= -->
+
+        <section id="pengenalan" class="placeholder-section">
+
+            <p class="section-label">
+                PENGENALAN UNIT
             </p>
 
             <h2>
-                Pengenalan Unit Parasitologi
+                Unit Parasitologi MKAKB
             </h2>
 
-        </div>
-
-
-        <div class="cards">
-
-            <div class="info-card">
-
-                <div class="icon">
-                    🔬
-                </div>
-
-                <h3>
-                    Unit Parasitologi MKAKB
-                </h3>
-
-                <p>
-
-                    Unit Parasitologi merupakan unit yang terlibat
-                    dalam pemeriksaan dan pengesanan parasit,
-                    termasuk pemeriksaan malaria.
-
-                </p>
-
-            </div>
-
-
-            <div class="info-card dark">
-
-                <div class="icon">
-                    🎓
-                </div>
-
-                <h3>
-                    Pembelajaran Berasaskan Kompetensi
-                </h3>
-
-                <p>
-
-                    Platform e-latih ini dibangunkan bagi membantu
-                    meningkatkan pengetahuan dan kemahiran
-                    dalam pengenalpastian malaria.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= MODUL ================= -->
-
-    <section id="modul" class="section grey">
-
-        <div class="section-title center">
-
             <p>
-                02 • PEMBELAJARAN
+                Kandungan pengenalan unit akan kita bina
+                dalam langkah seterusnya.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= MODUL ================= -->
+
+        <section id="modul" class="placeholder-section light">
+
+            <p class="section-label">
+                MODUL PEMBELAJARAN
             </p>
 
             <h2>
                 Modul Pembelajaran
             </h2>
 
-            <span>
-                Pilih modul dan mulakan perjalanan pembelajaran anda.
-            </span>
-
-        </div>
-
-
-        <div class="module-grid">
-
-
-            <div class="module-card">
-
-                <div class="number">
-                    01
-                </div>
-
-                <div class="module-icon">
-                    🦠
-                </div>
-
-                <h3>
-                    Pengenalan Malaria
-                </h3>
-
-                <p>
-
-                    Pengenalan kepada malaria,
-                    parasit dan kepentingan diagnosis.
-
-                </p>
-
-                <a href="#">
-                    Lihat Modul →
-                </a>
-
-            </div>
-
-
-
-            <div class="module-card featured">
-
-                <div class="number">
-                    02
-                </div>
-
-                <div class="module-icon">
-                    🔬
-                </div>
-
-                <h3>
-                    Malaria Microscopy
-                </h3>
-
-                <p>
-
-                    Pengenalpastian spesies
-                    Plasmodium melalui pemeriksaan mikroskopik.
-
-                </p>
-
-                <a href="#">
-                    Lihat Modul →
-                </a>
-
-            </div>
-
-
-
-            <div class="module-card">
-
-                <div class="number">
-                    03
-                </div>
-
-                <div class="module-icon">
-                    📋
-                </div>
-
-                <h3>
-                    Kualiti & Kompetensi
-                </h3>
-
-                <p>
-
-                    Penilaian, kawalan kualiti dan
-                    pengukuhan kemahiran pemeriksaan.
-
-                </p>
-
-                <a href="#">
-                    Lihat Modul →
-                </a>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= LATIHAN ================= -->
-
-    <section id="latihan" class="training">
-
-        <div>
-
             <p>
-                03 • PENILAIAN
+                Modul malaria akan kita masukkan di sini
+                satu persatu.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= LATIHAN ================= -->
+
+        <section id="latihan" class="placeholder-section">
+
+            <p class="section-label">
+                LATIHAN DAN UJIAN
             </p>
 
             <h2>
-                Latihan dan Ujian
+                Latihan & Ujian
             </h2>
 
             <p>
-
-                Uji pengetahuan anda selepas melengkapkan
-                modul pembelajaran.
-
+                Sistem latihan, ujian dan pengiraan markah
+                akan dibina kemudian.
             </p>
 
-
-            <a href="#" class="button primary">
-                Mula Latihan →
-            </a>
-
-        </div>
-
-
-        <div class="score">
-
-            <div class="score-circle">
-
-                100%
-
-            </div>
-
-            <strong>
-                KE ARAH KOMPETENSI
-            </strong>
-
-            <small>
-                Belajar • Latih • Uji • Kompeten
-            </small>
-
-        </div>
-
-    </section>
+        </section>
 
 
 
-    <!-- ================= HUBUNGI ================= -->
+        <!-- ================= HUBUNGI ================= -->
 
-    <section id="hubungi" class="section">
+        <section id="hubungi" class="placeholder-section light">
 
-        <div class="section-title center">
-
-            <p>
-                04 • HUBUNGI
+            <p class="section-label">
+                HUBUNGI KAMI
             </p>
 
             <h2>
                 Hubungi Kami
             </h2>
 
-            <span>
-                Untuk pertanyaan berkaitan e-latih dan
-                Unit Parasitologi MKAKB.
-            </span>
+            <p>
+                Maklumat hubungan Unit Parasitologi MKAKB
+                akan dimasukkan kemudian.
+            </p>
 
-        </div>
+        </section>
 
-
-        <div class="contact">
-
-            <div>
-                🏢
-                <strong>
-                    Unit Parasitologi MKAKB
-                </strong>
-            </div>
-
-            <div>
-                📍
-                <strong>
-                    Makmal Kesihatan Awam Kota Bharu
-                </strong>
-            </div>
-
-            <div>
-                ✉️
-                <strong>
-                    Hubungi pihak unit untuk maklumat lanjut
-                </strong>
-            </div>
-
-        </div>
-
-    </section>
+    </main>
 
 
 
@@ -423,21 +319,11 @@
 
     <footer>
 
-        <div>
-
-            <strong>
-                plusMODIA
-            </strong>
-
-            <span>
-                e-latih
-            </span>
-
-        </div>
+        <strong>plusMODIA</strong>
+        <span>e-Latih MKAKB</span>
 
         <p>
-            © 2026 Unit Parasitologi MKAKB.
-            Semua hak terpelihara.
+            © 2026 Unit Parasitologi MKAKB
         </p>
 
     </footer>
