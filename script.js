@@ -1,22 +1,22 @@
 function toggleMenu() {
 
-    const nav = document.querySelector("nav");
+    const nav = document.getElementById("mainNav");
 
     nav.classList.toggle("show");
 
 }
 
 
-// Tutup menu selepas pilih menu
+/* Tutup menu apabila link ditekan */
 
-const menuLinks = document.querySelectorAll("nav a");
+const links = document.querySelectorAll("#mainNav a");
 
-menuLinks.forEach(function(link) {
+links.forEach(function(link) {
 
     link.addEventListener("click", function() {
 
         document
-            .querySelector("nav")
+            .getElementById("mainNav")
             .classList.remove("show");
 
     });
