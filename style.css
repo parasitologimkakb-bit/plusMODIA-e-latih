@@ -965,18 +965,3 @@ footer span {
     }
 
 }
-
-.amanat-pengarah {
-    width: 80%;
-    max-width: 1500px;
-    margin: 50px auto 60px;
-    text-align: center;
-}
-
-.amanat-pengarah img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
