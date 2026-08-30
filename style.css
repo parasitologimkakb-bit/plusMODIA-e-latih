@@ -1,3 +1,5 @@
+/* ================= RESET ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,160 +13,100 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #17233c;
-    background: white;
-    line-height: 1.6;
+    line-height: 1.7;
+    background: #ffffff;
 }
 
 
-/* ================= NAVBAR ================= */
+/* ================= HEADER ================= */
 
 .navbar {
-
-    height: 80px;
-
+    height: 82px;
     padding: 0 6%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
     background: #06142d;
-
-    color: white;
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 999;
-
-}
-
-
-/* LOGO */
-
-.logo-area {
-
     display: flex;
-
     align-items: center;
-
-    gap: 12px;
-
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 
-.logo-area img {
+/* LOGO + NAMA */
 
-    width: 50px;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
 
-    height: 50px;
-
+.brand img {
+    width: 52px;
+    height: 52px;
     object-fit: contain;
-
 }
 
-
-.website-name {
-
-    font-size: 20px;
-
+.brand-text {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
 }
 
-
-.website-name strong {
-
-    color: white;
-
+.brand-text strong {
+    color: #ffffff;
 }
 
-
-.website-name span {
-
+.brand-text span {
     color: #45d7ff;
-
-    margin-left: 4px;
-
+    margin-left: 5px;
 }
 
 
-/* MENU */
+/* NAVIGATION */
 
 nav {
-
     display: flex;
-
-    gap: 8px;
-
+    gap: 5px;
 }
-
 
 nav a {
-
-    color: #dce5f5;
-
+    color: #d9e3f3;
     text-decoration: none;
-
-    padding: 10px 13px;
-
     font-size: 14px;
-
+    padding: 10px 13px;
     border-radius: 7px;
-
     transition: 0.3s;
-
 }
 
-
-nav a:hover,
-nav a.active {
-
-    background: #2547d8;
-
-    color: white;
-
+nav a:hover {
+    background: #294bd5;
+    color: #ffffff;
 }
 
-
-.menu-button {
-
+.menu-btn {
     display: none;
-
-    background: none;
-
     border: none;
-
+    background: none;
     color: white;
-
     font-size: 28px;
-
+    cursor: pointer;
 }
 
 
 /* ================= HERO ================= */
 
 .hero {
-
-    min-height: calc(100vh - 80px);
-
+    min-height: calc(100vh - 82px);
     padding: 80px 8%;
-
     display: flex;
-
     align-items: center;
-
-    position: relative;
-
-    overflow: hidden;
-
+    justify-content: space-between;
     color: white;
-
     background:
         radial-gradient(
             circle at 80% 40%,
-            rgba(60,100,220,.35),
+            rgba(52, 100, 230, 0.35),
             transparent 30%
         ),
         linear-gradient(
@@ -172,796 +114,397 @@ nav a.active {
             #040b18,
             #0b2145
         );
-
+    overflow: hidden;
 }
-
 
 .hero-content {
-
-    width: 60%;
-
-    z-index: 2;
-
+    max-width: 750px;
 }
 
-
-.small-title {
-
+.eyebrow {
     color: #45d7ff;
-
     font-size: 12px;
-
     letter-spacing: 3px;
-
     font-weight: bold;
-
     margin-bottom: 20px;
-
 }
-
 
 .hero h1 {
-
     font-size: clamp(45px, 6vw, 78px);
-
     line-height: 1;
-
     letter-spacing: -3px;
-
-    margin-bottom: 25px;
-
+    margin-bottom: 28px;
 }
-
 
 .hero h1 span {
-
-    color: #647cff;
-
+    display: block;
+    color: #6179ff;
 }
 
-
-.description {
-
-    color: #d3dced;
-
+.hero-text {
     font-size: 18px;
-
-    line-height: 1.8;
-
+    color: #d5deec;
+    line-height: 1.9;
 }
 
-
-.description b {
-
-    color: white;
-
+.hero-text strong {
+    color: #ffffff;
 }
 
 
 /* BUTTONS */
 
-.buttons {
-
-    margin-top: 35px;
-
+.hero-buttons {
     display: flex;
-
     gap: 12px;
-
+    margin-top: 35px;
     flex-wrap: wrap;
-
 }
 
-
-.button {
-
-    display: inline-block;
-
+.btn {
     padding: 14px 22px;
-
     border-radius: 8px;
-
     text-decoration: none;
-
-    font-weight: bold;
-
     font-size: 14px;
-
+    font-weight: bold;
 }
 
-
-.primary {
-
+.btn-primary {
     background: #3152df;
-
     color: white;
-
 }
 
-
-.primary:hover {
-
-    background: #4968f5;
-
+.btn-primary:hover {
+    background: #4a69f1;
 }
 
-
-.secondary {
-
-    border: 1px solid #60708d;
-
+.btn-outline {
+    border: 1px solid #70809b;
     color: white;
-
 }
 
 
 /* HERO DECORATION */
 
 .hero-decoration {
-
-    width: 40%;
-
+    width: 35%;
     height: 450px;
-
     position: relative;
-
 }
 
-
-.circle {
-
+.decoration-circle {
     position: absolute;
-
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
-
-    border: 1px solid rgba(69,215,255,.2);
-
-}
-
-
-.circle1 {
-
-    width: 390px;
-
-    height: 390px;
-
-    top: 30px;
-
+    border: 1px solid rgba(69, 215, 255, 0.2);
     right: 0;
-
+    top: 30px;
 }
 
-
-.circle2 {
-
-    width: 270px;
-
-    height: 270px;
-
-    top: 90px;
-
-    right: 60px;
-
-    background: rgba(50,80,200,.15);
-
-}
-
-
-.lab-card {
-
+.microscope-card {
     position: absolute;
-
     top: 170px;
-
-    right: 80px;
-
-    width: 250px;
-
+    right: 60px;
+    width: 260px;
     padding: 25px;
-
-    display: flex;
-
-    gap: 15px;
-
-    align-items: center;
-
     border-radius: 18px;
-
-    background: rgba(255,255,255,.08);
-
-    border: 1px solid rgba(255,255,255,.15);
-
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
-
 }
 
-
-.lab-card:first-letter {
-
-    font-size: 30px;
-
-}
-
-
-.lab-card small {
-
+.microscope-card small {
     display: block;
-
     color: #45d7ff;
-
     font-size: 9px;
-
     letter-spacing: 2px;
-
 }
 
-
-.lab-card strong {
-
+.microscope-card strong {
     font-size: 13px;
-
 }
 
 
-/* ================= SECTION ================= */
+/* ================= AMANAT ================= */
 
-.section {
-
-    padding: 90px 8%;
-
-}
-
-
-.grey {
-
-    background: #f5f8fc;
-
-}
-
-
-.section-title {
-
-    margin-bottom: 40px;
-
-}
-
-
-.section-title p {
-
-    color: #3152df;
-
-    font-size: 12px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-}
-
-
-.section-title h2 {
-
-    font-size: 42px;
-
-    line-height: 1.2;
-
-    margin-top: 8px;
-
-}
-
-
-.section-title span {
-
-    color: #68758c;
-
-}
-
-
-.center {
-
-    text-align: center;
-
-}
-
-
-/* ================= INFO CARDS ================= */
-
-.cards {
-
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 20px;
-
-}
-
-
-.info-card {
-
-    padding: 35px;
-
-    border-radius: 18px;
-
-    border: 1px solid #e1e7f0;
-
-    background: white;
-
-}
-
-
-.info-card.dark {
-
-    background: #07152e;
-
+.amanat-section {
+    padding: 100px 8%;
+    background:
+        linear-gradient(
+            135deg,
+            #07152e,
+            #0c2852
+        );
     color: white;
-
+    overflow: hidden;
 }
 
-
-.info-card .icon {
-
-    font-size: 30px;
-
-    margin-bottom: 15px;
-
-}
-
-
-.info-card h3 {
-
-    margin-bottom: 10px;
-
-}
-
-
-.info-card p {
-
-    color: #68758c;
-
-}
-
-
-.info-card.dark p {
-
-    color: #c7d2e5;
-
-}
-
-
-/* ================= MODULE ================= */
-
-.module-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 20px;
-
-}
-
-
-.module-card {
-
-    position: relative;
-
-    padding: 32px;
-
-    min-height: 290px;
-
-    border-radius: 18px;
-
-    background: white;
-
-    border: 1px solid #e1e7f0;
-
-    transition: .3s;
-
-}
-
-
-.module-card:hover {
-
-    transform: translateY(-6px);
-
-    box-shadow: 0 20px 50px rgba(0,0,0,.08);
-
-}
-
-
-.module-card.featured {
-
-    background: linear-gradient(
-        145deg,
-        #102a59,
-        #2948d7
-    );
-
-    color: white;
-
-}
-
-
-.number {
-
-    position: absolute;
-
-    top: 20px;
-
-    right: 20px;
-
-    font-weight: bold;
-
-    opacity: .5;
-
-}
-
-
-.module-icon {
-
-    font-size: 35px;
-
-    margin-bottom: 20px;
-
-}
-
-
-.module-card h3 {
-
-    margin-bottom: 10px;
-
-}
-
-
-.module-card p {
-
-    color: #68758c;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
-
-}
-
-
-.featured p {
-
-    color: #d8e1f2;
-
-}
-
-
-.module-card a {
-
-    color: #3152df;
-
-    font-weight: bold;
-
-    text-decoration: none;
-
-}
-
-
-.featured a {
-
-    color: #45d7ff;
-
-}
-
-
-/* ================= TRAINING ================= */
-
-.training {
-
-    padding: 90px 8%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 50px;
-
-    background: #edf3ff;
-
-}
-
-
-.training > div:first-child {
-
-    max-width: 650px;
-
-}
-
-
-.training p:first-child {
-
-    color: #3152df;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    font-size: 12px;
-
-}
-
-
-.training h2 {
-
-    font-size: 42px;
-
-    margin: 8px 0 15px;
-
-}
-
-
-.training h2 + p {
-
-    color: #68758c;
-
-    margin-bottom: 25px;
-
-}
-
-
-/* SCORE */
-
-.score {
-
-    min-width: 290px;
-
-    padding: 35px;
-
-    text-align: center;
-
-    background: #07152e;
-
-    color: white;
-
-    border-radius: 20px;
-
-}
-
-
-.score-circle {
-
-    width: 140px;
-
-    height: 140px;
-
+.amanat-container {
+    max-width: 1250px;
     margin: auto;
 
-    margin-bottom: 20px;
-
-    border-radius: 50%;
-
-    border: 8px solid #526cff;
-
     display: grid;
 
-    place-items: center;
+    /* GAMBAR KECIL DI KIRI + TEKS DI KANAN */
+    grid-template-columns: 260px 1fr;
 
-    font-size: 25px;
+    gap: 60px;
 
-    font-weight: bold;
-
+    align-items: start;
 }
 
 
-.score strong {
+/* GAMBAR PENGARAH */
 
+.director-photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.director-photo img {
+    width: 230px;
+    max-height: 360px;
+    object-fit: contain;
     display: block;
+}
 
+
+/* TEKS */
+
+.section-label {
     color: #45d7ff;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
 
-    font-size: 11px;
+.amanat-content h2 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
 
-    letter-spacing: 2px;
+.title-line {
+    width: 70px;
+    height: 3px;
+    background: #45d7ff;
+    margin-bottom: 28px;
+}
 
+.amanat-content > p:not(.section-label):not(.selamat) {
+    color: #d0dbea;
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 15px;
+}
+
+.amanat-content strong {
+    color: white;
+}
+
+.selamat {
+    color: #45d7ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 
-.score small {
+/* MAKLUMAT PENGARAH */
 
-    color: #aabbd6;
-
-}
-
-
-/* ================= CONTACT ================= */
-
-.contact {
-
-    max-width: 850px;
-
-    margin: auto;
-
-    border: 1px solid #e1e7f0;
-
-    border-radius: 18px;
-
-    padding: 10px;
-
-}
-
-
-.contact div {
-
-    padding: 18px;
+.director-details {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
 
     display: flex;
+    flex-direction: column;
+}
 
-    align-items: center;
+.director-details strong {
+    font-size: 16px;
+}
 
-    gap: 15px;
-
-    border-bottom: 1px solid #e1e7f0;
-
+.director-details span {
+    color: #aebdd4;
+    font-size: 12px;
 }
 
 
-.contact div:last-child {
+/* ================= PLACEHOLDER ================= */
 
-    border-bottom: none;
+.placeholder-section {
+    padding: 100px 8%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.placeholder-section.light {
+    background: #f5f8fc;
+}
+
+.placeholder-section h2 {
+    font-size: 42px;
+    margin: 8px 0 15px;
+}
+
+.placeholder-section > p:last-child {
+    color: #68758c;
 }
 
 
 /* ================= FOOTER ================= */
 
 footer {
-
     padding: 35px 8%;
-
     background: #040b18;
-
     color: #9eabc0;
 
     display: flex;
-
-    justify-content: space-between;
-
     align-items: center;
-
+    justify-content: space-between;
 }
-
 
 footer strong {
-
     color: white;
-
     font-size: 18px;
-
 }
-
 
 footer span {
-
     color: #45d7ff;
+    margin-left: 5px;
+}
 
+footer p {
+    font-size: 12px;
 }
 
 
-/* ================= MOBILE ================= */
+/* ================= TABLET ================= */
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
 
     nav {
-
         display: none;
 
         position: absolute;
-
-        top: 80px;
-
+        top: 82px;
         left: 0;
 
         width: 100%;
 
-        padding: 15px;
-
         background: #06142d;
 
+        padding: 15px;
+
         flex-direction: column;
-
     }
-
 
     nav.show {
-
         display: flex;
-
     }
 
-
-    .menu-button {
-
+    .menu-btn {
         display: block;
-
     }
-
-
-    .hero-content {
-
-        width: 100%;
-
-    }
-
 
     .hero-decoration {
-
         display: none;
+    }
 
+    .hero-content {
+        max-width: 100%;
     }
 
 
-    .module-grid {
+    /* AMANAT */
 
-        grid-template-columns: 1fr;
-
+    .amanat-container {
+        grid-template-columns: 200px 1fr;
+        gap: 35px;
     }
 
-
-    .training {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
+    .director-photo img {
+        width: 180px;
     }
 
+    .amanat-content h2 {
+        font-size: 36px;
+    }
 }
 
 
-@media(max-width: 600px) {
+/* ================= TELEFON ================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .brand-text {
+        font-size: 18px;
+    }
+
+    .brand img {
+        width: 45px;
+        height: 45px;
+    }
 
     .hero {
-
-        padding: 60px 6%;
-
+        padding: 65px 6%;
     }
-
-
-    .section {
-
-        padding: 70px 6%;
-
-    }
-
 
     .hero h1 {
-
         font-size: 43px;
+    }
 
+    .hero-text {
+        font-size: 16px;
     }
 
 
-    .cards {
+    /* AMANAT */
 
+    .amanat-section {
+        padding: 70px 6%;
+    }
+
+    .amanat-container {
         grid-template-columns: 1fr;
-
+        gap: 30px;
     }
 
+    .director-photo {
+        justify-content: center;
+    }
 
-    .section-title h2,
-    .training h2 {
+    .director-photo img {
+        width: 170px;
+        max-height: 260px;
+    }
 
+    .amanat-content h2 {
         font-size: 32px;
+    }
 
+    .amanat-content > p:not(.section-label):not(.selamat) {
+        font-size: 13px;
     }
 
 
     footer {
-
         flex-direction: column;
-
-        gap: 15px;
-
+        gap: 10px;
         text-align: center;
-
     }
 
 }
